@@ -1,0 +1,23 @@
+package com.example.webkorps;
+import com.example.webkorps.dao.UserRepository;
+import com.example.webkorps.entities.User;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+
+
+
+@SpringBootApplication
+public class DemoWebkorpsApplication {
+
+	public static void main(String[] args) {
+		ApplicationContext context=SpringApplication.run(DemoWebkorpsApplication.class, args);
+		UserRepository ur=context.getBean(UserRepository.class);
+		User user=new User();
+		user.setName("jalaj");
+		ur.save(user);
+	}
+
+}

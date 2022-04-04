@@ -1,0 +1,5 @@
+package com.rest1.example.Dao1;
+
+public interface CourseRepository {
+
+}

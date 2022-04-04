@@ -1,0 +1,11 @@
+package com.rest1.example.service;
+
+import java.util.List;
+
+import com.rest1.example.entities.Courses;
+
+public interface Courseservice 
+{
+public List<Courses> getCourse();
+public Courses getcourse(Long courseId);
+}

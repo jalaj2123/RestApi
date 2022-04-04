@@ -1,0 +1,10 @@
+package com.rest1.example.dao1;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.rest1.example.entities.Courses;
+
+public interface CourseRepository extends CrudRepository<Courses,Integer>
+{
+public Courses findById(int id);
+}

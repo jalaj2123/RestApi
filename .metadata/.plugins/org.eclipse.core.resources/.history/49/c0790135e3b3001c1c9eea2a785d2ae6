@@ -1,0 +1,5 @@
+package com.rest1.example.entities;
+
+public class Courses {
+
+}

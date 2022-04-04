@@ -1,0 +1,11 @@
+package com.example.webkorps.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.example.webkorps.entities.User;
+
+
+
+public interface JpaIWebkorps extends CrudRepository<User,Integer>{
+
+}

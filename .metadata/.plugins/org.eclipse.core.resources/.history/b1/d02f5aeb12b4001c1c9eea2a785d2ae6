@@ -1,0 +1,23 @@
+package com.rest1.example.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
+import com.rest1.example.Dao1.CourseRepository;
+import com.rest1.example.entities.Courses;
+
+@Component
+public class Courseservice 
+{
+	@Autowired
+private CourseRepository courserepo;
+
+	public Courses addcourse(Courses course)
+	{
+		course=courserepo.save(course);
+		return course;
+		
+		
+	}
+}

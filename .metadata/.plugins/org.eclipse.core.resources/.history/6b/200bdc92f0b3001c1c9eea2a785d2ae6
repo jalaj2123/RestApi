@@ -1,0 +1,28 @@
+package com.rest1.example.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.rest1.example.entities.Courses;
+@Service
+public class CourseImpl implements Courseservice{
+	 
+	List<Courses> list;
+	
+	public CourseImpl()
+	{
+		list=new ArrayList<>();
+		list.add(new Courses(111 ,"java","good" ));
+		list.add(new Courses(111 ,"spring","goodone" ));
+		
+	}
+
+	@Override
+	public List<Courses> getCourse() {
+		
+		return list;
+	}
+
+}

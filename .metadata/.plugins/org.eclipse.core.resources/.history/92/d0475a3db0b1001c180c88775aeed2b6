@@ -1,0 +1,16 @@
+package com.example.api.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class Controllerapi {
+	@RequestMapping(value="/books",method=RequestMethod.GET)
+	public String getbooks() 
+	{
+	return "this is book"	;
+	}
+
+}

@@ -1,0 +1,28 @@
+package com.example.db.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.db.entities.Employee;
+import com.example.db.repo.UserRepository;
+
+@Service 
+public class Empservice {
+	@Autowired   
+	private UserRepository userRepository; 
+
+	private static List<Employee> list=new ArrayList();
+	static
+	{
+	list.add(new Employee(111,"jalaj",11000));
+}
+	
+	public void addUser(Employee employee)  
+	{    
+	userRepository.saveAll(list);    
+	}    
+}
+

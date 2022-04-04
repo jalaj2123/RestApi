@@ -1,0 +1,5 @@
+package com.example.db.repo;
+
+public interface UserRepository {
+
+}
